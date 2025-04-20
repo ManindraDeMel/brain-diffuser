@@ -17,7 +17,7 @@ The following are a few reconstructions obtained :
 	cd data
 	python download_nsddata.py
 	```
-2. Download "COCO_73k_annots_curated.npy" file from [HuggingFace NSD](https://huggingface.co/datasets/pscotti/naturalscenesdataset/tree/main)
+2. Download "COCO_73k_annots_curated.npy" file from [HuggingFace NSD](https://huggingface.co/datasets/pscotti/naturalscenesdataset/tree/main) into the /data/annots folder
 3. Prepare NSD data for the Reconstruction Task:
     ```
 	cd data
