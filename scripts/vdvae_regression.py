@@ -1,6 +1,7 @@
 import sys
 import numpy as np
 import sklearn.linear_model as skl
+import pickle
 import argparse
 parser = argparse.ArgumentParser(description='Argument Parser')
 parser.add_argument("-sub", "--sub",help="Subject Number",default=1)
