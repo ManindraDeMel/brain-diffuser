@@ -36,6 +36,15 @@ wget https://openaipublic.blob.core.windows.net/very-deep-vaes-assets/vdvae-asse
 wget https://openaipublic.blob.core.windows.net/very-deep-vaes-assets/vdvae-assets-2/imagenet64-iter-1600000-model-ema.th
 wget https://openaipublic.blob.core.windows.net/very-deep-vaes-assets/vdvae-assets-2/imagenet64-iter-1600000-opt.th
 ```
+
+or for windows:
+
+```
+wget "https://openaipublic.blob.core.windows.net/very-deep-vaes-assets/vdvae-assets-2/imagenet64-iter-1600000-log.jsonl" -OutFile "imagenet64-iter-1600000-log.jsonl"
+wget "https://openaipublic.blob.core.windows.net/very-deep-vaes-assets/vdvae-assets-2/imagenet64-iter-1600000-model.th" -OutFile "imagenet64-iter-1600000-model.th"
+wget "https://openaipublic.blob.core.windows.net/very-deep-vaes-assets/vdvae-assets-2/imagenet64-iter-1600000-model-ema.th" -OutFile "imagenet64-iter-1600000-model-ema.th"
+wget "https://openaipublic.blob.core.windows.net/very-deep-vaes-assets/vdvae-assets-2/imagenet64-iter-1600000-opt.th" -OutFile "imagenet64-iter-1600000-opt.th"
+```
 2. Extract VDVAE latent features of stimuli images for any subject 'x' using `python scripts/vdvae_extract_features.py -sub x`
 3. Train regression models from fMRI to VDVAE latent features and save test predictions using `python scripts/vdvae_regression.py -sub x`
 4. Reconstruct images from predicted test features using `python scripts/vdvae_reconstruct_images.py -sub x`
